@@ -307,3 +307,44 @@ footer { background: var(--color-primary); color: rgba(255,255,255,.75); padding
   .footer-inner { grid-template-columns: 1fr; gap: 28px; }
   .apropos-stats { grid-template-columns: repeat(2,1fr); }
 }
+
+/* ===========================
+   BUG FIXES — 2026-04-11
+=========================== */
+
+/* BUG 10 — Hero content : padding horizontal */
+.hero-content { padding-left: 24px; padding-right: 24px; }
+
+/* BUG 5 — Badge urgence (services + témoignages) */
+.badge-urgence { display: inline-flex; align-items: center; background: var(--color-urgence); color: var(--color-white); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; padding: 3px 10px; border-radius: 100px; margin-top: 8px; }
+
+/* BUG 6 — Témoignages : layout carte header + avatar lettre */
+.temoignage-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.temoignage-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--color-primary); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; flex-shrink: 0; }
+.temoignage-header > div:nth-child(2) { flex: 1; }
+.temoignage-header > div:nth-child(2) strong { display: block; font-size: .92rem; color: var(--color-primary); font-weight: 700; }
+.temoignage-header > div:nth-child(2) span { display: block; font-size: .8rem; color: var(--color-text-light); }
+.temoignage-header .temoignage-stars { margin-left: auto; margin-bottom: 0; font-size: .95rem; }
+
+/* BUG 7 — Checkbox urgence formulaire */
+.urgence-checkbox { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.urgence-checkbox-label { display: flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 700; color: var(--color-urgence); }
+
+/* BUG 8 — Succès formulaire */
+.form-success { text-align: center; padding: 40px 24px; }
+.form-success svg { color: var(--color-accent); margin: 0 auto 16px; display: block; }
+.form-success h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--color-primary); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.form-success p { color: var(--color-text-light); }
+.form-success a { color: var(--color-accent); font-weight: 700; }
+
+/* BUG 9 — Footer liens navigation */
+.footer-links { display: flex; flex-direction: column; }
+.footer-links a { display: block; font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 8px; transition: color var(--transition); }
+.footer-links a:hover { color: var(--color-accent); }
+
+/* TÂCHE 2 — Avatar à propos : rond 80×80 à côté du nom */
+.apropos-header { display: flex; align-items: center; gap: 20px; margin-bottom: 28px; }
+.apropos-avatar-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-accent); flex-shrink: 0; }
+.apropos-header-info { }
+.apropos-name { font-family: var(--font-display); font-size: 1.4rem; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; margin-bottom: 4px; }
+.apropos-title-txt { font-size: .88rem; color: var(--color-accent); font-weight: 700; }

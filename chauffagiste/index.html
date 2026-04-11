@@ -122,7 +122,7 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="services" id="services">
+  <section class="services section" id="services">
     <div class="container">
       <div class="section-header">
         <h2>Nos prestations</h2>
@@ -208,7 +208,7 @@
   </section>
 
   <!-- RÉALISATIONS -->
-  <section class="realisations" id="realisations">
+  <section class="realisations section section--alt" id="realisations">
     <div class="container">
       <div class="section-header">
         <h2>Nos réalisations</h2>
@@ -244,11 +244,15 @@
   </section>
 
   <!-- À PROPOS -->
-  <section class="apropos" id="apropos">
+  <section class="apropos section" id="apropos">
     <div class="container apropos-inner">
       <div class="apropos-text">
-        <div class="apropos-photo">
-          <img src="images/avatar.jpg" alt="Julien Bernard, chauffagiste RGE à Saint-Herblain — photo de profil" loading="lazy">
+        <div class="apropos-header">
+          <img src="images/avatar.jpg" alt="Julien Bernard, chauffagiste RGE à Saint-Herblain" class="apropos-avatar-img" width="80" height="80" loading="lazy">
+          <div class="apropos-header-info">
+            <p class="apropos-name">Julien Bernard</p>
+            <p class="apropos-title-txt">Chauffagiste RGE depuis 2007</p>
+          </div>
         </div>
         <h2>Julien Bernard,<br />chauffagiste RGE depuis 2007</h2>
         <p>Après une formation en génie thermique et 5 ans comme technicien chez un grand installateur, j'ai fondé Thermique &amp; Confort en 2007 à Saint-Herblain. Ma conviction : un chauffage bien dimensionné et bien entretenu, c'est 30 à 50 % d'économies sur vos factures.</p>
@@ -294,7 +298,7 @@
   </section>
 
   <!-- ZONE D'INTERVENTION -->
-  <section class="zone" id="zone">
+  <section class="zone section section--alt" id="zone">
     <div class="container">
       <div class="section-header">
         <h2>Zone d'intervention</h2>
@@ -340,7 +344,7 @@
   </section>
 
   <!-- AVIS CLIENTS -->
-  <section class="avis" id="avis">
+  <section class="avis section" id="avis">
     <div class="container">
       <div class="section-header">
         <h2>Ce que disent nos clients</h2>
@@ -348,7 +352,7 @@
       </div>
       <div class="temoignages-grid">
 
-        <div class="temoignage-card temoignage-urgence">
+        <div class="temoignage-card temoignage-card--urgence">
           <div class="temoignage-header">
             <div class="temoignage-avatar">C</div>
             <div>
@@ -357,7 +361,7 @@
             </div>
             <div class="temoignage-stars">★★★★★</div>
           </div>
-          <p>"Panne de chaudière un vendredi soir en plein hiver. Julien était là en 1h30 et a tout remis en route. Un vrai professionnel, disponible et rassurant. Merci !"</p>
+          <p class="temoignage-text">"Panne de chaudière un vendredi soir en plein hiver. Julien était là en 1h30 et a tout remis en route. Un vrai professionnel, disponible et rassurant. Merci !"</p>
           <span class="badge-urgence">Intervention urgence</span>
         </div>
 
@@ -370,7 +374,7 @@
             </div>
             <div class="temoignage-stars">★★★★★</div>
           </div>
-          <p>"Remplacement de mon ancienne chaudière par un modèle condensation. Julien m'a tout expliqué, s'est chargé du dossier MaPrimeRénov' et le chantier était impeccable. Mes factures ont baissé de 35 %."</p>
+          <p class="temoignage-text">"Remplacement de mon ancienne chaudière par un modèle condensation. Julien m'a tout expliqué, s'est chargé du dossier MaPrimeRénov' et le chantier était impeccable. Mes factures ont baissé de 35 %."</p>
         </div>
 
         <div class="temoignage-card">
@@ -382,7 +386,7 @@
             </div>
             <div class="temoignage-stars">★★★★★</div>
           </div>
-          <p>"Installation d'une PAC air/eau couplée à un plancher chauffant pour notre rénovation. Dossier MaPrimeRénov' monté de A à Z. Résultat bluffant — la maison est à 20° constants et la facture a chuté."</p>
+          <p class="temoignage-text">"Installation d'une PAC air/eau couplée à un plancher chauffant pour notre rénovation. Dossier MaPrimeRénov' monté de A à Z. Résultat bluffant — la maison est à 20° constants et la facture a chuté."</p>
         </div>
 
       </div>
@@ -390,7 +394,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="faq" id="faq">
+  <section class="faq section section--alt" id="faq">
     <div class="container">
       <div class="section-header">
         <h2>Questions fréquentes</h2>
@@ -401,7 +405,7 @@
         <div class="faq-item">
           <button class="faq-question">
             Quelle aide pour remplacer ma chaudière par une PAC ?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>Plusieurs aides sont cumulables : <strong>MaPrimeRénov'</strong> (jusqu'à 4 000 € pour une PAC air/eau), <strong>l'éco-PTZ</strong> (prêt à taux zéro), les <strong>CEE</strong> (Certificats d'Économies d'Énergie) et la TVA réduite à 5,5 %. Nous montons votre dossier entièrement. Appelez-nous pour une estimation personnalisée.</p>
@@ -411,7 +415,7 @@
         <div class="faq-item">
           <button class="faq-question">
             L'entretien annuel de la chaudière est-il obligatoire ?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>Oui, l'entretien annuel est <strong>obligatoire</strong> pour toute chaudière à gaz ou fioul de puissance supérieure à 4 kW. Il doit être réalisé par un professionnel qualifié qui remet une attestation. En cas de sinistre, l'absence d'entretien peut entraîner un refus de prise en charge par l'assurance.</p>
@@ -421,7 +425,7 @@
         <div class="faq-item">
           <button class="faq-question">
             Combien de temps dure l'installation d'une PAC air/eau ?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>Pour une installation standard en remplacement d'une chaudière existante, comptez <strong>2 à 3 jours</strong>. Si des travaux de réseau sont nécessaires (remplacement des émetteurs ou pose d'un plancher chauffant), le chantier s'étend sur 3 à 5 jours. Nous planifions les travaux pour minimiser l'interruption de chauffage.</p>
@@ -431,7 +435,7 @@
         <div class="faq-item">
           <button class="faq-question">
             Pourquoi ma chaudière s'arrête régulièrement ?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>Les causes les plus fréquentes sont : une pression d'eau basse dans le circuit (vérifiez le manomètre, entre 1 et 2 bars), un filtre encrassé, un problème de sonde ou de carte électronique. Si votre chaudière affiche un code erreur, notez-le avant d'appeler — cela accélère le diagnostic et l'intervention.</p>
@@ -441,7 +445,7 @@
         <div class="faq-item">
           <button class="faq-question">
             Quelle est la durée de vie d'une chaudière à condensation ?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>Une chaudière à condensation correctement entretenue dure en moyenne <strong>15 à 20 ans</strong>. L'entretien annuel est la clé : il prévient les pannes, maintient le rendement et prolonge la durée de vie de l'appareil. Au-delà de 15 ans, un remplacement peut être plus économique que des réparations répétées.</p>
@@ -453,7 +457,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="contact section" id="contact">
     <div class="container">
       <div class="section-header">
         <h2>Demandez votre devis gratuit</h2>
