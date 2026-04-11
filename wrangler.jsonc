@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sites-demo",
+  "compatibility_date": "2026-04-11",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "chauffagiste"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
