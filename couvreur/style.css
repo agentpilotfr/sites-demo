@@ -78,9 +78,9 @@ ul   { list-style: none; }
 
 /* HERO */
 .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding-top: 120px;
-  background: linear-gradient(160deg, rgba(20,28,38,.96) 0%, rgba(44,62,80,.88) 50%, rgba(15,20,28,.97) 100%),
-    repeating-linear-gradient(30deg, transparent, transparent 25px, rgba(231,76,60,.025) 25px, rgba(231,76,60,.025) 26px),
-    linear-gradient(180deg, #141c26 0%, #2c3e50 50%, #0f141c 100%);
+  background:
+    linear-gradient(rgba(44,62,80,.7), rgba(44,62,80,.7)),
+    url('images/hero.jpg') center/cover no-repeat;
 }
 .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 75% 25%, rgba(231,76,60,.08) 0%, transparent 55%); }
 .hero-content { position: relative; z-index: 1; max-width: 720px; }
@@ -122,11 +122,14 @@ ul   { list-style: none; }
 .gallery-item:nth-child(5) .gallery-placeholder { background: linear-gradient(135deg,#c0392b,#E74C3C); }
 .gallery-item:nth-child(6) .gallery-placeholder { background: linear-gradient(135deg,#2C3E50,#4a6070); }
 .gallery-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 16px; background: linear-gradient(transparent, rgba(0,0,0,.7)); color: var(--color-white); font-size: .82rem; font-weight: 600; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--transition); }
+.gallery-item:hover img { transform: scale(1.04); }
 
 /* À PROPOS */
 .apropos-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: center; }
 .apropos-avatar-wrap { text-align: center; }
-.apropos-avatar { width: 180px; height: 180px; border-radius: 50%; margin: 0 auto 16px; background: linear-gradient(135deg, var(--color-primary), #4a6070); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3.5rem; color: var(--color-accent); box-shadow: 0 8px 32px rgba(44,62,80,.3); letter-spacing: 1px; }
+.apropos-avatar { width: 180px; height: 180px; border-radius: 50%; margin: 0 auto 16px; background: linear-gradient(135deg, var(--color-primary), #4a6070); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3.5rem; color: var(--color-accent); box-shadow: 0 8px 32px rgba(44,62,80,.3); letter-spacing: 1px; overflow: hidden; }
+.apropos-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .apropos-avatar-name  { font-family: var(--font-display); font-size: 1.3rem; color: var(--color-primary); letter-spacing: .5px; text-transform: uppercase; }
 .apropos-avatar-title { font-size: .88rem; color: var(--color-accent); font-weight: 700; }
 .apropos-desc { font-size: 1rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 32px; }
