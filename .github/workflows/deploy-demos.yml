@@ -1,0 +1,42 @@
+name: Deploy sites-demo
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Deploy ${{ matrix.site }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    strategy:
+      fail-fast: false
+      matrix:
+        site:
+          - chauffagiste
+          - paysagiste
+          - macon
+          - peintre
+          - plombier
+          - couvreur
+          - electricien
+          - menuisier
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy ${{ matrix.site }} to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >
+            pages deploy ${{ matrix.site }}
+            --project-name=mea-${{ matrix.site }}
+            --branch=${{ github.head_ref || github.ref_name }}
+            --commit-hash=${{ github.sha }}
+            --commit-message="${{ github.event.head_commit.message || 'PR preview' }}"
